@@ -28,6 +28,7 @@
     CGRect messageRect;
     messageRect = [message boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:messageFont} context:nil];
     messageRect.size.height += 1;
+    messageRect.size.width += 1;
     messageRect.origin = (CGPoint){0, 0};
     
     CGRect contentViewRect = messageRect;
