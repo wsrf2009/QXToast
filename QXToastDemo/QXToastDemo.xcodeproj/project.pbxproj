@@ -13,7 +13,7 @@
 		39CEF1041BD4D24400C079FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CEF1021BD4D24400C079FC /* Main.storyboard */; };
 		39CEF1061BD4D24400C079FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CEF1051BD4D24400C079FC /* Assets.xcassets */; };
 		39CEF1091BD4D24400C079FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CEF1071BD4D24400C079FC /* LaunchScreen.storyboard */; };
-		39CEF1171BD4E7B800C079FC /* QXToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CEF1161BD4E7B800C079FC /* QXToast.m */; settings = {ASSET_TAGS = (); }; };
+		39CEF1171BD4E7B800C079FC /* QXToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CEF1161BD4E7B800C079FC /* QXToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -278,8 +278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = QXToastDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.larkiv.QXToastDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = QXToastDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.larkiv.QXToastDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,6 +319,7 @@
 				39CEF10F1BD4D24400C079FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

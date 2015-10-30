@@ -26,9 +26,8 @@
     CGSize maxSize = (CGSize){maxMessageWidth, maxMessageheight};
     
     CGRect messageRect;
-    messageRect.size = [message sizeWithFont:messageFont constrainedToSize:maxSize];
+    messageRect = [message boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:messageFont} context:nil];
     messageRect.size.height += 1;
-    messageRect.size.width += 1;
     messageRect.origin = (CGPoint){0, 0};
     
     CGRect contentViewRect = messageRect;
@@ -36,7 +35,7 @@
     contentViewRect.size.width = maxContentViewWidth;
     contentViewRect.origin.y = -contentViewRect.size.height;
     contentViewRect.origin.x = 0;
-    
+
     UIView *contentView = [[UIView alloc] init];
     [contentView setFrame:contentViewRect];
     [contentView setBackgroundColor:[UIColor colorWithWhite:.0f alpha:0.7]];

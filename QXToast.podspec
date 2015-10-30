@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "QXToast"
-  s.version      = "0.0.1"
-  s.summary      = "A method that can show tips on the top of screen"
+  s.version      = “0.0.2”
+  s.summary      = “在屏幕顶部显示提示信息，3秒后收回”
   s.homepage     = "https://github.com/wsrf2009/QXToast"
   s.license      = "MIT"
   s.author             = { "wsrf2009" => "wsrf2011@gmail.com" }
