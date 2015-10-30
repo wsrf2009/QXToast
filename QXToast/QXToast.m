@@ -26,14 +26,9 @@
     CGSize maxSize = (CGSize){maxMessageWidth, maxMessageheight};
     
     CGRect messageRect;
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        messageRect.size = [message sizeWithFont:messageFont constrainedToSize:maxSize];
-#pragma clang diagnostic pop
-    
-    NSLog(@"%s messageRect:%@", __func__, NSStringFromCGRect(messageRect));
+    messageRect.size = [message sizeWithFont:messageFont constrainedToSize:maxSize];
     messageRect.size.height += 1;
+    messageRect.size.width += 1;
     messageRect.origin = (CGPoint){0, 0};
     
     CGRect contentViewRect = messageRect;
@@ -41,8 +36,6 @@
     contentViewRect.size.width = maxContentViewWidth;
     contentViewRect.origin.y = -contentViewRect.size.height;
     contentViewRect.origin.x = 0;
-    
-    NSLog(@"%s contentViewRect:%@", __func__, NSStringFromCGRect(contentViewRect));
     
     UIView *contentView = [[UIView alloc] init];
     [contentView setFrame:contentViewRect];
