@@ -39,7 +39,7 @@
 
     UIView *contentView = [[UIView alloc] init];
     [contentView setFrame:contentViewRect];
-    [contentView setBackgroundColor:[UIColor colorWithWhite:.0f alpha:0.7]];
+    [contentView setBackgroundColor:[UIColor colorWithWhite:.0f alpha:0.9]];
     [contentView setAlpha:.0f];
     
     UILabel *labelMessage = [[UILabel alloc] init];
